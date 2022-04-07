@@ -7,6 +7,15 @@ background: #eee;
 }
 .h-custom {
 height: calc(100% - 73px);
+
+}
+.img-cont{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #1d368c;
 }
 @media (max-width: 450px) {
 .h-custom {
