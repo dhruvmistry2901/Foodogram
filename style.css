@@ -98,13 +98,13 @@ nav .container{
     align-items: center;
 }
 
-nav .search-bar{
+.search-bar{
     background: var(--color-light);
     border-radius: var(--border-radius);
     padding: var(--search-padding);
 }
 
-nav .search-bar input[type="text"]{
+ .search-bar input[type="text"]{
     background: transparent;
     border: none;
     width: 30vw;
@@ -112,7 +112,7 @@ nav .search-bar input[type="text"]{
     font: size 0.9rem;
     color: var(--color-dark);
 }
-nav .search-bar input[type="search"]::placeholder{
+.search-bar input[type="search"]::placeholder{
     color: var(--color-gray);
     
 }
@@ -245,7 +245,7 @@ main .container .left .profile{
     margin-right: 1rem;
 }
 
-.middle .feed .feeds{
+.middle .feeds .feed{
     background: var(--color-white);
     border-radius: var(--card-border-radius);
     padding: var(--card-padding);
@@ -257,5 +257,123 @@ main .container .left .profile{
 .middle .feed .head{
     display: flex;
     justify-content: space-between;
+
+}
+
+.middle .feed .user{
+    display: flex;
+    gap: 1rem;
+}
+.middle .feed .photo{
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    margin: 0.7rem 0;
+}
+
+.middle .feed .action-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size:1.4rem;
+    margin:0.6rem;
+}
+.middle .feed .action-button .interactive-button{
+    display: flex;
+    align-items: center;
+}
+
+.middle .feed .action-button .interactive-button p{
+    font-size: 0.7rem;
+    margin-left: 0.5rem;
+}
+
+/*right*/
+main .container .right{
+    height: max-content;
+    position: sticky;
+    top:var(--sticky-top-right);
+    bottom: 0;
+}
+.right .messages{
+    background: var(--color-white);
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
     
+}
+.right .messages .heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.right .messages i{
+    font-size: 1.4rem;
+}
+
+.right .messages .search-bar{
+    display: flex;
+    
+    margin-bottom: 1rem;
+
+}
+
+/* .right .messages .category{
+    display: flex;
+    
+    justify-content: space-between;
+    margin-bottom: 1rem;
+} */
+
+.right .messages .message{
+    display: flex;
+    gap:1rem;
+    margin-bottom: 1rem;
+    align-items: start;
+}
+
+.right .messages .message:last-child{
+    margin:0;
+}
+
+.right .messages .message p{
+    font-size:0.8rem;
+
+}
+.right .message .profile-picture{
+    overflow: visible;
+    position: relative;
+}
+
+.right .profile-picture img{
+    border-radius: 50%;
+}
+
+/*FRIEND REQUESTS*/
+
+.right .friend-requests{
+    margin-top: 1rem;
+}
+
+.right .friend-requests h4{
+    color:var(--color-gray);
+    margin:1rem 0;
+}
+
+.right .request{
+    background: var(--color-white);
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    margin-bottom: 0.7rem;
+}
+
+.right .request .info{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.right .request .action{
+gap:1rem;
+display: flex;
+
 }
