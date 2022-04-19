@@ -104,7 +104,7 @@ nav .search-bar{
     padding: var(--search-padding);
 }
 
-nav .search-bar input[type="search"]{
+nav .search-bar input[type="text"]{
     background: transparent;
     border: none;
     width: 30vw;
@@ -158,12 +158,13 @@ main .container .left .profile{
     background: var(--color-white);
     border-radius: var(--card-border-radius);
     
-    align-items: center;
+    
 
 }
 .left .sidebar .menu-item{
     display: flex;
     align-items: center;
+    
     height: 4rem;
     cursor: pointer;
     translate: all 300ms ease;
