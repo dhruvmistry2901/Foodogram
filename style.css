@@ -130,7 +130,7 @@ main{
 }
 main .container{
     display: grid;
-    grid-template-columns: 18vh auto 20vh;
+    grid-template-columns:  max-content auto 20vh;
     column-gap: 2rem;
     position: relative;
 }
@@ -157,7 +157,8 @@ main .container .left .profile{
     margin-top: 1rem;
     background: var(--color-white);
     border-radius: var(--card-border-radius);
-    overflow-wrap: break-word;
+    
+    align-items: center;
 
 }
 .left .sidebar .menu-item{
@@ -167,6 +168,8 @@ main .container .left .profile{
     cursor: pointer;
     translate: all 300ms ease;
     position: relative;
+    font-size: 1rem;
+    padding-right: 0.5rem;
 }
 .left .sidebar .menu-item:hover{
     background: var(--color-light);
@@ -178,3 +181,7 @@ main .container .left .profile{
     color: var(--color-gray);
     position: relative;
 }
+ .left .sidebar label{
+     margin-left: 2rem;
+     margin-bottom: 0.7rem;
+ }
