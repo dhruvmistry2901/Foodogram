@@ -14,7 +14,7 @@
     --border-radius:2rem;
     --card-border-radius:1rem;
     --btn-padding:0.6rem 1rem;
-    --card-padding: 0.7rem;
+    --card-padding: 1rem;
     --search-padding: 0.6rem 1rem;
     
 
@@ -130,7 +130,7 @@ main{
 }
 main .container{
     display: grid;
-    grid-template-columns:  max-content auto 20vh;
+    grid-template-columns:  18vw auto 20vw;
     column-gap: 2rem;
     position: relative;
 }
@@ -170,7 +170,6 @@ main .container .left .profile{
     translate: all 300ms ease;
     position: relative;
     font-size: 1rem;
-    padding-right: 0.5rem;
 }
 .left .sidebar .menu-item:hover{
     background: var(--color-light);
