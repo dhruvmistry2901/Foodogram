@@ -1,115 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <link rel="stylesheet" href="createPost.css">
-    
-   
-    
 
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link rel="stylesheet" href="createPost.css" />
+  </head>
+  <body>
     <nav>
-        <div class="container">
-            <h2 class="logo">
-                Foodogram
-            </h2>
-            <div class="search-bar">
-                <i class="uil uil-search"></i>
-                <input type="text" placeholder="Search for recipes, ingredients and more">
-            </div>
-            <div class="create">
-                <!-- <label class="btn btn-primary" for="create-post">
+      <div class="container">
+        <h2 class="logo">Foodogram</h2>
+        <div class="search-bar">
+          <i class="uil uil-search"></i>
+          <input
+            type="text"
+            placeholder="Search for recipes, ingredients and more"
+          />
+        </div>
+        <div class="create">
+          <!-- <label class="btn btn-primary" for="create-post">
                     <span>Create </span>
                     </label> -->
-                    <div class="profile-picture">
-                        <img
-                        
-                        src="./Images/profile.jpg"
-                        alt="logo"
-                        
-                      />
-                    </div>
-            </div>
+          <div class="profile-picture">
+            <img src="./Images/profile.jpg" alt="logo" />
+          </div>
         </div>
+      </div>
     </nav>
     <!---main-->
     <main>
-        <div class="container">
-            <!--Leftbox-->
-            <div class="left">
-                <a href="" class="profile">
-                    <div class="profile-picture">
-                        <img
-                        
-                        src="./Images/profile.jpg"
-                        alt="logo"
-                        
-                      />
-                    </div>
-                      <div class="handle">
-                        <h3>NAME</h3>
-                        <p class="text-muted">@username</p>
-                      </div>
-                    
-                </a>
-                <!--sidebar-->
-                <div class="sidebar">
-                  <a href="./home.html"  class="menu-item ">
-                      <span> <i class="uil uil-home"></i></span><h3>Home</h3>
-                    </a>
-                    <a  class="menu-item" id="message-notification">
-                      <span> <i class="uil uil-message" ></i></span><h3>Messages</h3>
-                    </a>
-                    <a  class="menu-item">
-                      <span> <i class="uil uil-users-alt"></i></span><h3>Find My Buddy</h3>
-
-                  </a>  
-                  <!-- <label for="create-post" class=" btn btn-primary">Create Post</label> -->
-                </div>
-                
-
-            </div>
-<!--right-->
-<div class="right">
-    <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ridiculus mus mauris vitae ultricies leo. Tempus urna et pharetra pharetra massa massa ultricies. Elementum nibh tellus molestie nunc non blandit massa. Proin sagittis nisl rhoncus mattis rhoncus urna. Massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin. Venenatis cras sed felis eget velit. Quisque sagittis purus sit amet volutpat consequat  -->
-    <div class="messages">
-        <div class="heading">
-            <h4>
-                Upload Your Image
-            </h4>
-            <label class="uploadLabel">
-                <input type="file" class="uploadButton"/>
-                <i class="uil uil-plus"></i>
-            </label>
-        </div>
-        <div class="message">
+      <div class="container">
+        <!--Leftbox-->
+        <div class="left">
+          <a href="" class="profile">
             <div class="profile-picture">
-                <img
-                
-                src="./Images/profile.jpg"
-                alt="logo"
-                
-              />
+              <img src="./Images/profile.jpg" alt="logo" />
             </div>
-            <div class="message-body">
+            <div class="handle">
+              <h3>NAME</h3>
+              <p class="text-muted">@username</p>
+            </div>
+          </a>
+          <!--sidebar-->
+          <div class="sidebar">
+            <a href="./home.html" class="menu-item">
+              <span> <i class="uil uil-home"></i></span>
+              <h3>Home</h3>
+            </a>
+            <a class="menu-item" id="message-notification">
+              <span> <i class="uil uil-message"></i></span>
+              <h3>Messages</h3>
+            </a>
+            <a class="menu-item">
+              <span> <i class="uil uil-users-alt"></i></span>
+              <h3>Find My Buddy</h3>
+            </a>
+            <!-- <label for="create-post" class=" btn btn-primary">Create Post</label> -->
+          </div>
+        </div>
+        <!--right-->
+        <div class="right">
+          <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ridiculus mus mauris vitae ultricies leo. Tempus urna et pharetra pharetra massa massa ultricies. Elementum nibh tellus molestie nunc non blandit massa. Proin sagittis nisl rhoncus mattis rhoncus urna. Massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin. Venenatis cras sed felis eget velit. Quisque sagittis purus sit amet volutpat consequat  -->
+          <div class="messages">
+            <div class="heading">
+              <h4>Upload Your Image</h4>
+              <div class="form-input">
+                <div class="preview">
+                  <img id="file-ip-1-preview">
+                </div>
+                <label for="file-ip-1"><i class="uil uil-plus"></i></label>
+                <input type="file" id="file-ip-1" accept="image/*" onchange="showPreview(event);">
+                
+              </div>
+            </div>
+            <div class="message">
+              <div class="profile-picture">
+                <img src="./Images/profile.jpg" alt="logo" />
+              </div>
+              <div class="message-body">
                 <h5>Sender</h5>
                 <p class="text-muted">hey how u doin?</p>
+              </div>
             </div>
+          </div>
         </div>
-        </div>
-                
-            </div>
-            
-
-        </div>
+      </div>
     </main>
 
     <script src="./index.js"></script>
-</body>
+  </body>
+  
+  <script type="text/javascript">
+  function showPreview(event){
+  if(event.target.files.length > 0){
+    var src = URL.createObjectURL(event.target.files[0]);
+    var preview = document.getElementById("file-ip-1-preview");
+    preview.src = src;
+    preview.style.display = "block";
+  }
+}
+</script>
 </html>
