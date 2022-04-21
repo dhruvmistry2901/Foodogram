@@ -386,6 +386,14 @@ gap:1rem;
 display: flex;
 
 }
+
+/*image-caption*/
+.image-cap1,.image-cap2{
+    display:none
+}
+
+
+
  /*MEDIA QUERY*/
  @media screen and (max-width: 1200px){
      .container{

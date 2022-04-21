@@ -53,7 +53,7 @@
               <span> <i class="uil uil-home"></i></span>
               <h3>Home</h3>
             </a>
-            <a class="menu-item" id="message-notification">
+            <a href="./home.html" class="menu-item" id="message-notification">
               <span> <i class="uil uil-message"></i></span>
               <h3>Messages</h3>
             </a>
@@ -80,12 +80,17 @@
               </div>
             </div>
             <div class="message">
-              <div class="profile-picture">
-                <img src="./Images/profile.jpg" alt="logo" />
-              </div>
               <div class="message-body">
-                <h5>Sender</h5>
-                <p class="text-muted">hey how u doin?</p>
+                <div class="action">
+                  <button class="btn btn-primary" onclick="display()" id="generate-caption">
+                      Generate Caption
+                  </button>
+                  <p class="image-cap1">Image caption</p>
+                  <button class="btn" id="write-caption" onclick="displayManual()">
+                     Write your caption
+                  </button>
+                  <p class="image-cap2">caption</p>
+              </div>
               </div>
             </div>
           </div>
@@ -93,7 +98,7 @@
       </div>
     </main>
 
-    <script src="./index.js"></script>
+    <!-- <script src="./index.js"></script> -->
   </body>
   
   <script type="text/javascript">
@@ -104,6 +109,20 @@
     preview.src = src;
     preview.style.display = "block";
   }
+}
+
+function display() {
+    document.getElementById("generate-caption").style.display = "none";
+    document.getElementById("write-caption").style.display = "none";
+    document.getElementsByClassName("image-cap1")[0].style.display = "block";
+
+}
+
+function displayManual() {
+    document.getElementById("generate-caption").style.display = "none";
+    document.getElementById("write-caption").style.display = "none";
+    document.getElementsByClassName("image-cap2")[0].style.display = "block";
+
 }
 </script>
 </html>
