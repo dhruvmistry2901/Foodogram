@@ -134,7 +134,7 @@ main{
 }
 main .container{
     display: grid;
-    grid-template-columns:  15vw auto 20vw;
+    grid-template-columns:  15vw auto ;
     column-gap: 2rem;
     position: relative;
 }
@@ -389,10 +389,11 @@ display: flex;
 
 /*image-caption*/
 .image-cap1,.image-cap2{
-    display:none
+    display:none;
 }
-
-
+#edit{
+    display:none;
+}
 
  /*MEDIA QUERY*/
  @media screen and (max-width: 1200px){

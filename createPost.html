@@ -69,12 +69,13 @@
           <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ridiculus mus mauris vitae ultricies leo. Tempus urna et pharetra pharetra massa massa ultricies. Elementum nibh tellus molestie nunc non blandit massa. Proin sagittis nisl rhoncus mattis rhoncus urna. Massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin. Venenatis cras sed felis eget velit. Quisque sagittis purus sit amet volutpat consequat  -->
           <div class="messages">
             <div class="heading">
-              <h4>Upload Your Image</h4>
+              <h4>Upload Your Image <label for="file-ip-1"><i class="uil uil-plus" id="plus"></i></label>
+                <label for="file-ip-1"><i class="uil uil-edit" id="edit"></i></label></h4>
               <div class="form-input">
                 <div class="preview">
                   <img id="file-ip-1-preview">
                 </div>
-                <label for="file-ip-1"><i class="uil uil-plus"></i></label>
+                
                 <input type="file" id="file-ip-1" accept="image/*" onchange="showPreview(event);">
                 
               </div>
@@ -108,7 +109,10 @@
     var preview = document.getElementById("file-ip-1-preview");
     preview.src = src;
     preview.style.display = "block";
+    document.getElementById("plus").style.display = "none";
+    document.getElementById("edit").style.display = "block";
   }
+  
 }
 
 function display() {
