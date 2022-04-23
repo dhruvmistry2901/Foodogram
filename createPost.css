@@ -75,6 +75,13 @@ img{
     color: white;
 }
 
+.btn-submit{
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    float: left;
+    margin-top: 2rem;
+}
+
 .text-bold{
     font-weight:500;
 }
@@ -515,4 +522,8 @@ display: flex;
   
     margin-bottom:30px;
   }
+  #reset-caption{
+      display:none;
+  }
+
   

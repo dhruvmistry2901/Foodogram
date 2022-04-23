@@ -66,7 +66,6 @@
         </div>
         <!--right-->
         <div class="right">
-          <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ridiculus mus mauris vitae ultricies leo. Tempus urna et pharetra pharetra massa massa ultricies. Elementum nibh tellus molestie nunc non blandit massa. Proin sagittis nisl rhoncus mattis rhoncus urna. Massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin. Venenatis cras sed felis eget velit. Quisque sagittis purus sit amet volutpat consequat  -->
           <div class="messages">
             <div class="heading">
               <h4>Upload Your Image <label for="file-ip-1"><i class="uil uil-plus" id="plus"></i></label>
@@ -91,6 +90,10 @@
                      Write your caption
                   </button>
                   <p class="image-cap2">caption</p>
+                  
+              </div>
+              <div class="submit">
+              <button id="submit" class="btn btn-submit">Post</button>
               </div>
               </div>
             </div>
@@ -117,16 +120,16 @@
 
 function display() {
     document.getElementById("generate-caption").style.display = "none";
-    document.getElementById("write-caption").style.display = "none";
+    document.getElementById("write-caption").style.display = "block";
     document.getElementsByClassName("image-cap1")[0].style.display = "block";
-
+    document.getElementsByClassName("image-cap2")[0].style.display = "none";
 }
 
 function displayManual() {
-    document.getElementById("generate-caption").style.display = "none";
+    document.getElementById("generate-caption").style.display = "block";
     document.getElementById("write-caption").style.display = "none";
     document.getElementsByClassName("image-cap2")[0].style.display = "block";
-
+    document.getElementsByClassName("image-cap1")[0].style.display = "none";
 }
 </script>
 </html>
