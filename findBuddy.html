@@ -25,7 +25,7 @@
         </div>
         <div class="create">
           <label class="btn btn-primary" for="create-post">
-                    <span>Create </span>
+            <a href="./createPost.html"> <span>Create </span></a>
                     </label>
           <div class="profile-picture">
             <img src="./Images/profile.jpg" alt="logo" />
@@ -57,14 +57,30 @@
               <span> <i class="uil uil-message"></i></span>
               <h3>Messages</h3>
             </a>
-            <a class="menu-item">
+            <a class="menu-item active">
               <span> <i class="uil uil-users-alt"></i></span>
               <h3>Find My Buddy</h3>
             </a>
-            <label for="create-post" class=" btn btn-primary">Create Post</label>
+            <label for="create-post" class=" btn btn-primary"><a href="./createPost.html">Create Post</a></label>
           </div>
         </div>
         <!--right-->
+        <div class="middle">
+            <form class="create-post" >
+                <div class="label">
+                    <label for="exampleFormControlSelect1">What do you feel like eating today?</label>
+                    <!-- <select class="form-control" id="exampleFormControlSelect1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select> -->
+                   
+                <input type="text" placeholder="" id="create post">
+                <input type="submit" value="Find Your Buddy" class="btn btn-submit">
+            </form>
+        </div>
        
       </div>
     </main>
@@ -73,6 +89,20 @@
   </body>
   
   <script type="text/javascript">
-  
+  const menuItems=document.querySelectorAll('.menu-item');
+
+const changeActiveItem=()=>{
+    menuItems.forEach(item=>{
+        item.classList.remove('active');
+    });
+}
+
+menuItems.forEach(item=>{
+    item.addEventListener('click',()=>{
+        changeActiveItem();
+        item.classList.add('active');
+      
+    });
+})
 </script>
 </html>
